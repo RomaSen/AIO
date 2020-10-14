@@ -18,16 +18,6 @@ async def send_request(session, pid):
         response.close()
 
 
-# POST
-# async def send_request(session, pid):
-#     payload = {
-#         'num1': random.randint(0, 2000),
-#         'num2': random.randint(0, 2000)
-#     }
-#     async with session.post(URL,data=json.dumps(payload)) as response:
-#         response.close()
-
-
 async def asynchronous_sending():
     start = time.time()
 
