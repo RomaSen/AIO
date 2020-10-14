@@ -1,6 +1,6 @@
-from .views import frontend
+from .views import summator
 
 
 def setup_routes(app):
-    app.router.add_route('GET', '/', frontend.index)
-    app.router.add_route('POST', '/sum/', frontend.sum)
+    app.router.add_route('GET', '/', summator.SummatorView)
+    # app.router.add_route('POST', '/', summator.SummatorView)
